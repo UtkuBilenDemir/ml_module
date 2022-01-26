@@ -30,3 +30,6 @@ class PFA(object):
 
         self.indices_ = [sorted(f, key=lambda x: x[1])[0][0] for f in dists.values()]
         self.features_ = X[:, self.indices_]
+
+if __name__ == "__main__":
+    print("PFA Method")
